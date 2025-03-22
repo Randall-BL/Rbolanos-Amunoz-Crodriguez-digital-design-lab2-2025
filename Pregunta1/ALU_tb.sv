@@ -1,6 +1,6 @@
 module alu_tb;
 
-    // Declarar señales de entrada y salida
+    // Declarar señales de entrada y salida de la ALU
     logic [3:0] a, b;                         
     logic [3:0] alu_op;                       
     logic [3:0] result;                     
