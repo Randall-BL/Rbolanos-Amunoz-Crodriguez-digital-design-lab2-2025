@@ -9,7 +9,7 @@ module alu #(
     output logic N, Z, C, V
 );
 
-    logic [WIDTH-1:0] sum, diff, prod, quotient, remainder;
+    logic [WIDTH-1:0] sum, diff, prod;
     logic [WIDTH-1:0] and_res, or_res, xor_res, shl_res, shr_res;
     logic carry_out, overflow_sum, overflow_diff;
 
@@ -54,8 +54,6 @@ module alu #(
             4'b0000: result = sum;          // Suma
             4'b0001: result = diff;         // Resta
             4'b0010: result = prod;         // Multiplicación
-            4'b0011: result = quotient;     // División
-            4'b0100: result = remainder;    // Módulo
             4'b0101: result = and_res;      // AND
             4'b0110: result = or_res;       // OR
             4'b0111: result = xor_res;      // XOR
