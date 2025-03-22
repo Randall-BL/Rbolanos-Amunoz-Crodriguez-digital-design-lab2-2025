@@ -11,59 +11,59 @@ cModel Technology
 Z0 dC:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1742678655
+Z2 !s110 1742767954
 !i10b 1
-!s100 7D[mB_8g@=Wn1OPSHUn`K0
+!s100 cY;50[G`83jRdCT3^=eXO3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ID`0ihbiZjD8PeA`1Q7dNz3
+I^Q1JDN[95Cm<PIUhdaUZU3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1742083858
+w1742679350
 8C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/adder.sv
 FC:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/adder.sv
 !i122 1
-L0 1 40
+L0 1 51
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1742678655.000000
+Z6 !s108 1742767954.000000
 !s107 C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1|C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/adder.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1
-Z8 tCvgOpt 0
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1
+Z9 tCvgOpt 0
 valu
 R1
-R2
+!s110 1742767953
 !i10b 1
-!s100 RG^g4EUTmc?KL<a:KMd7T1
+!s100 M[9O3L3UEJCDCAUE>P`2O1
 R3
-IYMA;[D97fV`]J3OVzZ>jC2
+I:RU=^feO39M38SH[C3Y912
 R4
 S1
 R0
-w1742678610
+w1742767922
 8C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu.sv
 FC:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu.sv
 !i122 0
-L0 3 79
+L0 1 81
 R5
 r1
 !s85 0
 31
-!s108 1742678654.000000
+!s108 1742767953.000000
 !s107 C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1|C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu.sv|
 !i113 1
-R6
 R7
 R8
+R9
 valu_tb
 R1
-Z9 !s110 1742678657
+Z10 !s110 1742767955
 !i10b 1
 !s100 <IBD5;PoJJLY5L^GD@oQW3
 R3
@@ -71,7 +71,7 @@ IiahY?RECLz@Yd`QLXQB4o0
 R4
 S1
 R0
-Z10 w1742663402
+w1742679652
 8C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu_tb.sv
 FC:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu_tb.sv
 !i122 9
@@ -80,16 +80,16 @@ R5
 r1
 !s85 0
 31
-Z11 !s108 1742678657.000000
+Z11 !s108 1742767955.000000
 !s107 C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1|C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu_tb.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vbin_to_7seg
 R1
-Z12 !s110 1742678656
+R2
 !i10b 1
 !s100 ];225WIggiBBa_1kAhTWZ2
 R3
@@ -97,7 +97,7 @@ IZ=3hD;]n_VGi^CdQ;cCJC2
 R4
 S1
 R0
-R10
+Z12 w1742663402
 8C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/bin_to_7seg.sv
 FC:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/bin_to_7seg.sv
 !i122 6
@@ -106,16 +106,16 @@ R5
 r1
 !s85 0
 31
-Z13 !s108 1742678656.000000
+R6
 !s107 C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/bin_to_7seg.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1|C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/bin_to_7seg.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vfull_adder
 R1
-R12
+R2
 !i10b 1
 !s100 53`CLbG^>Po8A[37go4N^0
 R3
@@ -123,7 +123,7 @@ I[=zDESBG`PncC]hZU@G0C3
 R4
 S1
 R0
-R10
+R12
 8C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/full_adder.sv
 FC:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/full_adder.sv
 !i122 4
@@ -132,16 +132,16 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/full_adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1|C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/full_adder.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vmultiplier
 R1
-R12
+R2
 !i10b 1
 !s100 3Xj2aJZ[TB[o<KhC;9F^X1
 R3
@@ -149,7 +149,7 @@ IGYB4?kiIn1<TUddI^KLUX3
 R4
 S1
 R0
-R10
+R12
 8C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/multiplier.sv
 FC:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/multiplier.sv
 !i122 2
@@ -158,16 +158,16 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/multiplier.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1|C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/multiplier.sv|
 !i113 1
-R6
 R7
 R8
+R9
 voperation_selector
 R1
-R9
+R10
 !i10b 1
 !s100 I@>O@3B7bN@?;Z6ieQG153
 R3
@@ -184,16 +184,16 @@ R5
 r1
 !s85 0
 31
-R13
+R11
 !s107 C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/operation_selector.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1|C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/operation_selector.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vpartial_multiplier
 R1
-R9
+R10
 !i10b 1
 !s100 2<^^99eeKoDP3C0jQeEB^0
 R3
@@ -201,7 +201,7 @@ IeWe5ckhj@oihO`A9RBS6J2
 R4
 S1
 R0
-R10
+R12
 8C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/partial_multiplier.sv
 FC:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/partial_multiplier.sv
 !i122 8
@@ -214,12 +214,12 @@ R11
 !s107 C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/partial_multiplier.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1|C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/partial_multiplier.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vsubtractor
 R1
-R12
+R2
 !i10b 1
 !s100 caB47b6e^Y:@_E^]h9K9I3
 R3
@@ -227,7 +227,7 @@ IcfHf>h8cm7H?gK8:L6Hhg1
 R4
 S1
 R0
-R10
+R12
 8C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/substractor.sv
 FC:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/substractor.sv
 !i122 3
@@ -236,16 +236,16 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/substractor.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1|C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/substractor.sv|
 !i113 1
-R6
 R7
 R8
+R9
 vtop
 R1
-R12
+R2
 !i10b 1
 !s100 ?MU2b;h^l>cKicHTg1b>O2
 R3
@@ -253,7 +253,7 @@ ISDg?UFZDcIW]NLHfaUgHR1
 R4
 S1
 R0
-R10
+R12
 8C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/top.sv
 FC:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/top.sv
 !i122 5
@@ -262,10 +262,10 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/top.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1|C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/top.sv|
 !i113 1
-R6
 R7
 R8
+R9

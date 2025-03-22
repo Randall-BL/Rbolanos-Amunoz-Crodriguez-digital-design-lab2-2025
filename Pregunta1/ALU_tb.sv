@@ -1,15 +1,15 @@
 module alu_tb;
 
     // Declarar señales de entrada y salida de la ALU
-    logic [3:0] a, b;                         
-    logic [3:0] alu_op;                       
-    logic [3:0] result;                     
-    logic N, Z, C, V;							
+    logic [3:0] a, b;                         // Operandos de 4 bits
+    logic [3:0] alu_op;                       // Código de operación de 4 bits
+    logic [3:0] result;                       // Resultado de 4 bits
+    logic N, Z, C, V;                         // Banderas de estado (Negativo, Cero, Acarreo, Desbordamiento)
 
     // Declarar señales esperadas para la comprobación
-    logic [3:0] expected_result;             
-    logic expected_N, expected_Z, expected_C, expected_V;
-    string operation_name;
+    logic [3:0] expected_result;              // Resultado esperado
+    logic expected_N, expected_Z, expected_C, expected_V; // Banderas esperadas
+    string operation_name;                    // Nombre de la operación actual
 
     // Instancia del módulo ALU
     alu uut (
@@ -31,113 +31,113 @@ module alu_tb;
 
         // Prueba de suma
         operation_name = "Suma";
-        a = 4'b0011; b = 4'b0010; alu_op = 4'b0000;
-        expected_result = 4'b0101;
-        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0;
+        a = 4'b0011; b = 4'b0010; alu_op = 4'b0000; // 3 + 2
+        expected_result = 4'b0101;                 // Resultado esperado: 5 (0101)
+        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
-        a = 4'b1100; b = 4'b0100; alu_op = 4'b0000;
-        expected_result = 4'b0000;  
-        expected_N = 0; expected_Z = 1; expected_C = 1; expected_V = 0;
+        a = 4'b1100; b = 4'b0100; alu_op = 4'b0000; // -4 + 4 (en complemento a 2)
+        expected_result = 4'b0000;                 // Resultado esperado: 0 (0000)
+        expected_N = 0; expected_Z = 1; expected_C = 1; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
         // Prueba de resta
         operation_name = "Resta";
-        a = 4'b0111; b = 4'b0011; alu_op = 4'b0001;
-        expected_result = 4'b0100;
-        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0;
+        a = 4'b0111; b = 4'b0011; alu_op = 4'b0001; // 7 - 3
+        expected_result = 4'b0100;                 // Resultado esperado: 4 (0100)
+        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
-        a = 4'b0010; b = 4'b0100; alu_op = 4'b0001;
-        expected_result = 4'b1110;
-        expected_N = 1; expected_Z = 0; expected_C = 0; expected_V = 0;
+        a = 4'b0010; b = 4'b0100; alu_op = 4'b0001; // 2 - 4
+        expected_result = 4'b1110;                 // Resultado esperado: -2 (1110 en complemento a 2)
+        expected_N = 1; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
         // Prueba de multiplicación
         operation_name = "Multiplicación";
-        a = 4'b0010; b = 4'b0011; alu_op = 4'b0010;
-        expected_result = 4'b0110;
-        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0;
+        a = 4'b0010; b = 4'b0011; alu_op = 4'b0010; // 2 * 3
+        expected_result = 4'b0110;                 // Resultado esperado: 6 (0110)
+        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
-        a = 4'b0110; b = 4'b0010; alu_op = 4'b0010;
-        expected_result = 4'b1100;
-        expected_N = 1; expected_Z = 0; expected_C = 0; expected_V = 0;
+        a = 4'b0110; b = 4'b0010; alu_op = 4'b0010; // 6 * 2
+        expected_result = 4'b1100;                 // Resultado esperado: 12 (1100)
+        expected_N = 1; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
         // Prueba de AND
         operation_name = "AND";
-        a = 4'b1111; b = 4'b1110; alu_op = 4'b0101;
-        expected_result = 4'b1110;
-        expected_N = 1; expected_Z = 0; expected_C = 0; expected_V = 0;
+        a = 4'b1111; b = 4'b1110; alu_op = 4'b0101; // 1111 AND 1110
+        expected_result = 4'b1110;                 // Resultado esperado: 1110
+        expected_N = 1; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
-        a = 4'b1010; b = 4'b0101; alu_op = 4'b0101;
-        expected_result = 4'b0000;
-        expected_N = 0; expected_Z = 1; expected_C = 0; expected_V = 0;
+        a = 4'b1010; b = 4'b0101; alu_op = 4'b0101; // 1010 AND 0101
+        expected_result = 4'b0000;                 // Resultado esperado: 0000
+        expected_N = 0; expected_Z = 1; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
         // Prueba de OR
         operation_name = "OR";
-        a = 4'b1111; b = 4'b0000; alu_op = 4'b0110;
-        expected_result = 4'b1111;
-        expected_N = 1; expected_Z = 0; expected_C = 0; expected_V = 0;
+        a = 4'b1111; b = 4'b0000; alu_op = 4'b0110; // 1111 OR 0000
+        expected_result = 4'b1111;                 // Resultado esperado: 1111
+        expected_N = 1; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
-        a = 4'b0001; b = 4'b0010; alu_op = 4'b0110;
-        expected_result = 4'b0011;
-        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0;
+        a = 4'b0001; b = 4'b0010; alu_op = 4'b0110; // 0001 OR 0010
+        expected_result = 4'b0011;                 // Resultado esperado: 0011
+        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
         // Prueba de XOR
         operation_name = "XOR";
-        a = 4'b1100; b = 4'b0011; alu_op = 4'b0111;
-        expected_result = 4'b1111;
-        expected_N = 1; expected_Z = 0; expected_C = 0; expected_V = 0;
+        a = 4'b1100; b = 4'b0011; alu_op = 4'b0111; // 1100 XOR 0011
+        expected_result = 4'b1111;                 // Resultado esperado: 1111
+        expected_N = 1; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
-        a = 4'b1010; b = 4'b1010; alu_op = 4'b0111;
-        expected_result = 4'b0000;
-        expected_N = 0; expected_Z = 1; expected_C = 0; expected_V = 0;
+        a = 4'b1010; b = 4'b1010; alu_op = 4'b0111; // 1010 XOR 1010
+        expected_result = 4'b0000;                 // Resultado esperado: 0000
+        expected_N = 0; expected_Z = 1; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
         // Prueba de shift left
         operation_name = "Shift Left";
-        a = 4'b0001; b = 4'b0010; alu_op = 4'b1000;
-        expected_result = 4'b0100;
-        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0;
+        a = 4'b0001; b = 4'b0010; alu_op = 4'b1000; // 0001 << 2
+        expected_result = 4'b0100;                 // Resultado esperado: 0100
+        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
-        a = 4'b1000; b = 4'b0001; alu_op = 4'b1000;
-        expected_result = 4'b0000;
-        expected_N = 0; expected_Z = 1; expected_C = 1; expected_V = 0;
+        a = 4'b1000; b = 4'b0001; alu_op = 4'b1000; // 1000 << 1
+        expected_result = 4'b0000;                 // Resultado esperado: 0000
+        expected_N = 0; expected_Z = 1; expected_C = 1; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
         // Prueba de shift right
         operation_name = "Shift Right";
-        a = 4'b1000; b = 4'b0010; alu_op = 4'b1001;
-        expected_result = 4'b0010;
-        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0;
+        a = 4'b1000; b = 4'b0010; alu_op = 4'b1001; // 1000 >> 2
+        expected_result = 4'b0010;                 // Resultado esperado: 0010
+        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
-        a = 4'b1010; b = 4'b0001; alu_op = 4'b1001;
-        expected_result = 4'b0101;
-        expected_N = 0; expected_Z = 0; expected_C = 1; expected_V = 0;
+        a = 4'b1010; b = 4'b0001; alu_op = 4'b1001; // 1010 >> 1
+        expected_result = 4'b0101;                 // Resultado esperado: 0101
+        expected_N = 0; expected_Z = 0; expected_C = 1; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
 
