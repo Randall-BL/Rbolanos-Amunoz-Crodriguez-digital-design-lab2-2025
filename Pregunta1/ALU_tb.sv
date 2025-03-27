@@ -140,6 +140,42 @@ module alu_tb;
         expected_N = 0; expected_Z = 0; expected_C = 1; expected_V = 0; // Banderas esperadas
         #10;
         check_result();
+        
+        // Prueba de división
+        operation_name = "División";
+        a = 4'b1000; b = 4'b0010; alu_op = 4'b0011; // 8 / 2
+        expected_result = 4'b0100;                 // Resultado esperado: 4 (0100)
+        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
+        #10;
+        check_result();
+        
+        a = 4'b0111; b = 4'b0011; alu_op = 4'b0011; // 7 / 3
+        expected_result = 4'b0010;                 // Resultado esperado: 2 (0010)
+        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
+        #10;
+        check_result();
+        
+        // Prueba de división por cero
+        operation_name = "División por cero";
+        a = 4'b0101; b = 4'b0000; alu_op = 4'b0011; // 5 / 0
+        expected_result = 4'b0000;                 // Resultado esperado: 0 (0000)
+        expected_N = 0; expected_Z = 1; expected_C = 0; expected_V = 0; // Banderas esperadas
+        #10;
+        check_result();
+        
+        // Prueba de módulo
+        operation_name = "Módulo";
+        a = 4'b1000; b = 4'b0011; alu_op = 4'b0100; // 8 % 3
+        expected_result = 4'b0010;                 // Resultado esperado: 2 (0010)
+        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
+        #10;
+        check_result();
+        
+        a = 4'b0111; b = 4'b0100; alu_op = 4'b0100; // 7 % 4
+        expected_result = 4'b0011;                 // Resultado esperado: 3 (0011)
+        expected_N = 0; expected_Z = 0; expected_C = 0; expected_V = 0; // Banderas esperadas
+        #10;
+        check_result();
 
         $display("======================================");
         $display("   FIN DE LA SIMULACION DE LA ALU  ");

@@ -8,7 +8,7 @@ module alu #(
 );
 
     // Señales internas para almacenar resultados parciales
-    logic [WIDTH-1:0] sum, diff, prod;           // Resultados de suma, resta y multiplicación
+    logic [WIDTH-1:0] sum, diff, prod, quotient, remainder;           // Resultados de suma, resta y multiplicación
     logic [WIDTH-1:0] and_res, or_res, xor_res;  // Resultados de operaciones lógicas
     logic [WIDTH-1:0] shl_res, shr_res;          // Resultados de desplazamientos
     logic carry_out, overflow_sum, overflow_diff; // Acarreo y desbordamiento de suma y resta
@@ -46,9 +46,9 @@ module alu #(
     assign shl_res = a << b[$clog2(WIDTH)-1:0];  // Desplazamiento a la izquierda (shift left)
     assign shr_res = a >> b[$clog2(WIDTH)-1:0];  // Desplazamiento a la derecha (shift right)
 
-    // Operaciones de división y módulo (comentadas o eliminadas si no se usan)
-    // assign quotient = b != 0 ? a / b : {WIDTH{1'b0}};  // División (protección contra división por cero)
-    // assign remainder = b != 0 ? a % b : {WIDTH{1'b0}}; // Módulo (protección contra división por cero)
+	 // Operaciones de división y módulo con protección contra división por cero
+	assign quotient = (opcode == 4'b0011 && b != 0) ? a / b : {WIDTH{1'b0}};
+	assign remainder = (opcode == 4'b0100 && b != 0) ? a % b : {WIDTH{1'b0}};
 
     // Selección de la operación basada en el opcode
     always_comb begin
@@ -56,6 +56,8 @@ module alu #(
             4'b0000: result = sum;          // Suma
             4'b0001: result = diff;         // Resta
             4'b0010: result = prod;         // Multiplicación
+            4'b0011: result = quotient;     // División
+            4'b0100: result = remainder;    // Módulo
             4'b0101: result = and_res;      // AND
             4'b0110: result = or_res;       // OR
             4'b0111: result = xor_res;      // XOR

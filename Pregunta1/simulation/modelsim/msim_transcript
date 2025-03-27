@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:25:58 on Mar 23,2025
+# Start time: 21:04:33 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 16:25:58 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:34 on Mar 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:25:59 on Mar 23,2025
+# Start time: 21:04:35 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 16:25:59 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:35 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:00 on Mar 23,2025
+# Start time: 21:04:36 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 16:26:00 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:36 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:00 on Mar 23,2025
+# Start time: 21:04:36 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 16:26:01 on Mar 23,2025, Elapsed time: 0:00:01
+# End time: 21:04:38 on Mar 26,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:02 on Mar 23,2025
+# Start time: 21:04:38 on Mar 26,2025
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 16:26:03 on Mar 23,2025, Elapsed time: 0:00:01
+# End time: 21:04:39 on Mar 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:03 on Mar 23,2025
+# Start time: 21:04:39 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -483,19 +483,19 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 16:26:05 on Mar 23,2025, Elapsed time: 0:00:02
+# End time: 21:04:42 on Mar 26,2025, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 10
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:05 on Mar 23,2025
+# Start time: 21:04:42 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 16:26:06 on Mar 23,2025, Elapsed time: 0:00:01
+# End time: 21:04:43 on Mar 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:07 on Mar 23,2025
+# Start time: 21:04:43 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -635,7 +635,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 16:26:07 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:44 on Mar 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -646,15 +646,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:08 on Mar 23,2025
+# Start time: 21:04:45 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 16:26:10 on Mar 23,2025, Elapsed time: 0:00:02
+# End time: 21:04:47 on Mar 26,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:10 on Mar 23,2025
+# Start time: 21:04:47 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -754,7 +754,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 16:26:10 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:47 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -765,7 +765,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:11 on Mar 23,2025
+# Start time: 21:04:48 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -775,18 +775,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 16:26:13 on Mar 23,2025, Elapsed time: 0:00:02
+# End time: 21:04:50 on Mar 26,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 6
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:13 on Mar 23,2025
+# Start time: 21:04:50 on Mar 26,2025
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 16:26:13 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:51 on Mar 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -800,109 +800,109 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1 {C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:13 on Mar 23,2025
+# Start time: 21:04:51 on Mar 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1" C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 16:26:14 on Mar 23,2025, Elapsed time: 0:00:01
+# End time: 21:04:51 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1 {C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:14 on Mar 23,2025
+# Start time: 21:04:51 on Mar 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1" C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 16:26:14 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:51 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1 {C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/multiplier.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:14 on Mar 23,2025
+# Start time: 21:04:51 on Mar 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1" C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/multiplier.sv 
 # -- Compiling module multiplier
 # 
 # Top level modules:
 # 	multiplier
-# End time: 16:26:14 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:51 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1 {C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/substractor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:14 on Mar 23,2025
+# Start time: 21:04:51 on Mar 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1" C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/substractor.sv 
 # -- Compiling module subtractor
 # 
 # Top level modules:
 # 	subtractor
-# End time: 16:26:14 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:51 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1 {C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/full_adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:14 on Mar 23,2025
+# Start time: 21:04:51 on Mar 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1" C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/full_adder.sv 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 16:26:14 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:52 on Mar 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1 {C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/top.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:14 on Mar 23,2025
+# Start time: 21:04:52 on Mar 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1" C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/top.sv 
 # -- Compiling module top
 # 
 # Top level modules:
 # 	top
-# End time: 16:26:14 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:52 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1 {C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/bin_to_7seg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:14 on Mar 23,2025
+# Start time: 21:04:52 on Mar 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1" C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/bin_to_7seg.sv 
 # -- Compiling module bin_to_7seg
 # 
 # Top level modules:
 # 	bin_to_7seg
-# End time: 16:26:15 on Mar 23,2025, Elapsed time: 0:00:01
+# End time: 21:04:52 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1 {C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/operation_selector.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:15 on Mar 23,2025
+# Start time: 21:04:52 on Mar 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1" C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/operation_selector.sv 
 # -- Compiling module operation_selector
 # 
 # Top level modules:
 # 	operation_selector
-# End time: 16:26:15 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:52 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1 {C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/partial_multiplier.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:15 on Mar 23,2025
+# Start time: 21:04:52 on Mar 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1" C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/partial_multiplier.sv 
 # -- Compiling module partial_multiplier
 # 
 # Top level modules:
 # 	partial_multiplier
-# End time: 16:26:15 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:52 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1 {C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:26:15 on Mar 23,2025
+# Start time: 21:04:53 on Mar 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1" C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu_tb.sv 
 # -- Compiling module alu_tb
 # 
 # Top level modules:
 # 	alu_tb
-# End time: 16:26:15 on Mar 23,2025, Elapsed time: 0:00:00
+# End time: 21:04:53 on Mar 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  alu_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" alu_tb 
-# Start time: 16:26:16 on Mar 23,2025
+# Start time: 21:04:53 on Mar 26,2025
 # Loading sv_std.std
 # Loading work.alu_tb
 # Loading work.alu
@@ -994,12 +994,30 @@
 # Esperado: result = 0101 | N = 0 | Z = 0 | C = 1 | V = 0
 # Obtenido: result = 0101 | N = 0 | Z = 0 | C = 0 | V = 0
 # Error: bandera C incorrecta!
+# 
+# Operacion: División | alu_op = 0011 | a = 1000 | b = 0010
+# Esperado: result = 0100 | N = 0 | Z = 0 | C = 0 | V = 0
+# Obtenido: result = 0100 | N = 0 | Z = 0 | C = 0 | V = 0
+# 
+# Operacion: División | alu_op = 0011 | a = 0111 | b = 0011
+# Esperado: result = 0010 | N = 0 | Z = 0 | C = 0 | V = 0
+# Obtenido: result = 0010 | N = 0 | Z = 0 | C = 0 | V = 0
+# 
+# Operacion: División por cero | alu_op = 0011 | a = 0101 | b = 0000
+# Esperado: result = 0000 | N = 0 | Z = 1 | C = 0 | V = 0
+# Obtenido: result = 0000 | N = 0 | Z = 1 | C = 0 | V = 0
+# 
+# Operacion: Módulo | alu_op = 0100 | a = 1000 | b = 0011
+# Esperado: result = 0010 | N = 0 | Z = 0 | C = 0 | V = 0
+# Obtenido: result = 0010 | N = 0 | Z = 0 | C = 0 | V = 0
+# 
+# Operacion: Módulo | alu_op = 0100 | a = 0111 | b = 0100
+# Esperado: result = 0011 | N = 0 | Z = 0 | C = 0 | V = 0
+# Obtenido: result = 0011 | N = 0 | Z = 0 | C = 0 | V = 0
 # ======================================
 #    FIN DE LA SIMULACION DE LA ALU  
 # ======================================
-# ** Note: $finish    : C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu_tb.sv(147)
-#    Time: 160 ps  Iteration: 0  Instance: /alu_tb
-# 1
-# Break in Module alu_tb at C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu_tb.sv line 147
-# End time: 16:27:08 on Mar 23,2025, Elapsed time: 0:00:52
+# ** Note: $finish    : C:/Users/Windows11Virtual/Desktop/Rbolanos-Amunoz-Crodriguez-digital-design-lab2-2025/Pregunta1/alu_tb.sv(183)
+#    Time: 210 ps  Iteration: 0  Instance: /alu_tb
+# End time: 21:05:20 on Mar 26,2025, Elapsed time: 0:00:27
 # Errors: 0, Warnings: 4
