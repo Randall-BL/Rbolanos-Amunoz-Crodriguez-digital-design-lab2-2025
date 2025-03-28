@@ -1,54 +1,56 @@
-//ALU
-
 module alu #(
-    parameter WIDTH = 4  // Parametro para definir el ancho de los buses
+    parameter WIDTH = 4  // Parámetro para definir el ancho de los buses (por defecto es 4 bits)
 )(
-    input logic [WIDTH-1:0] a, b,                // Entradas parametrizadas
-    input logic [WIDTH-1:0] opcode,              // Código de operación parametrizado
-    output logic [WIDTH-1:0] result,             // Resultado parametrizado
-    output logic N, Z, C, V
+    input logic [WIDTH-1:0] a, b,                // Entradas de WIDTH bits (operandos)
+    input logic [WIDTH-1:0] opcode,              // Código de operación de WIDTH bits
+    output logic [WIDTH-1:0] result,             // Resultado de WIDTH bits
+    output logic N, Z, C, V                      // Banderas de estado (Negativo, Cero, Acarreo, Desbordamiento)
 );
 
-    logic [WIDTH-1:0] sum, diff, prod, quotient, remainder;
-    logic [WIDTH-1:0] and_res, or_res, xor_res, shl_res, shr_res;
-    logic carry_out, overflow_sum, overflow_diff;
+    // Señales internas para almacenar resultados parciales
+    logic [WIDTH-1:0] sum, diff, prod, quotient, remainder;           // Resultados de suma, resta y multiplicación
+    logic [WIDTH-1:0] and_res, or_res, xor_res;  // Resultados de operaciones lógicas
+    logic [WIDTH-1:0] shl_res, shr_res;          // Resultados de desplazamientos
+    logic carry_out, overflow_sum, overflow_diff; // Acarreo y desbordamiento de suma y resta
 
     // Instancias de módulos estructurales
+    // Sumador
     adder #(.WIDTH(WIDTH)) add_unit(
         .a(a),
         .b(b),
-        .result(sum),
-        .carry(carry_out),
-        .overflow(overflow_sum)
+        .result(sum),               // Resultado de la suma
+        .carry(carry_out),          // Acarreo de salida
+        .overflow(overflow_sum)     // Desbordamiento de la suma
     );
 
+    // Restador
     subtractor #(.WIDTH(WIDTH)) sub_unit(
         .a(a),
         .b(b),
-        .result(diff),
-        .borrow(), // No usamos borrow en este contexto
-        .overflow(overflow_diff)
+        .result(diff),              // Resultado de la resta
+        .borrow(),                  // No se usa el borrow en este contexto
+        .overflow(overflow_diff)    // Desbordamiento de la resta
     );
 
+    // Multiplicador
     multiplier #(.WIDTH(WIDTH)) mul_unit(
         .a(a),
         .b(b),
-        .result(prod)
+        .result(prod)               // Resultado de la multiplicación
     );
 
-    // Operaciones lógicas y shifts
-    assign and_res = a & b;
-    assign or_res = a | b;
-    assign xor_res = a ^ b;
-    assign shl_res = a << b[$clog2(WIDTH)-1:0];  // Limitamos el shift a un valor según WIDTH
-    assign shr_res = a >> b[$clog2(WIDTH)-1:0];
+    // Operaciones lógicas y desplazamientos
+    assign and_res = a & b;         // Operación AND bit a bit
+    assign or_res = a | b;          // Operación OR bit a bit
+    assign xor_res = a ^ b;         // Operación XOR bit a bit
+    assign shl_res = a << b[$clog2(WIDTH)-1:0];  // Desplazamiento a la izquierda (shift left)
+    assign shr_res = a >> b[$clog2(WIDTH)-1:0];  // Desplazamiento a la derecha (shift right)
 
-    // Operaciones de división y módulo
-    assign quotient = b != 0 ? a / b : {WIDTH{1'b0}};  // Protección contra división por cero
-    assign remainder = b != 0 ? a % b : {WIDTH{1'b0}}; // Protección contra división por cero
+	 // Operaciones de división y módulo con protección contra división por cero
+	assign quotient = (opcode == 4'b0011 && b != 0) ? a / b : {WIDTH{1'b0}};
+	assign remainder = (opcode == 4'b0100 && b != 0) ? a % b : {WIDTH{1'b0}};
 
-
-        // Selección de la operación basada en opcode
+    // Selección de la operación basada en el opcode
     always_comb begin
         case (opcode)
             4'b0000: result = sum;          // Suma
@@ -61,26 +63,21 @@ module alu #(
             4'b0111: result = xor_res;      // XOR
             4'b1000: result = shl_res;      // Shift left
             4'b1001: result = shr_res;      // Shift right
-            default: result = 4'b0000;      // Default
+            default: result = 4'b0000;      // Default (resultado 0 si el opcode no coincide)
         endcase
     end
 
-    // Cálculo de banderas
-    assign N = result[3];                  // Negativo: 1 si el bit más significativo es 1
-    assign Z = (result == 4'b0);           // Cero: 1 si el resultado es 0
-	 
-    
+    // Cálculo de banderas de estado
+    assign N = result[WIDTH-1];             // Bandera Negativo: 1 si el bit más significativo es 1
+    assign Z = (result == {WIDTH{1'b0}});   // Bandera Cero: 1 si el resultado es 0
+
     // Bandera de acarreo (C)
     assign C = (opcode == 4'b0000) ? carry_out :           // Acarreo para Suma
-               (opcode == 4'b1000) ? a[3] :                // Acarreo para Shift Left
-               (opcode == 4'b1001) ? a[0] : 1'b0;          // Acarreo para Shift Right
+               (opcode == 4'b1000) ? a[WIDTH-1] :          // Acarreo para Shift Left (bit más significativo de a)
+               (opcode == 4'b1001) ? a[0] : 1'b0;          // Acarreo para Shift Right (bit menos significativo de a)
 
     // Bandera de desbordamiento (V)
     assign V = (opcode == 4'b0000) ? overflow_sum :        // Desbordamiento para Suma
                (opcode == 4'b0001) ? overflow_diff : 1'b0; // Desbordamiento para Resta
 
-
 endmodule
-
-
-
